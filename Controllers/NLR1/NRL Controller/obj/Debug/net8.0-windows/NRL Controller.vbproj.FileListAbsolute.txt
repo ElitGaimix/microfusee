@@ -1,0 +1,166 @@
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.exe
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.deps.json
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.runtimeconfig.json
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.dll
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.pdb
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\MainWindow.g.vb
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\Application.g.vb
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller_MarkupCompile.cache
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller_MarkupCompile.lref
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\MainWindow.baml
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.g.resources
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.GeneratedMSBuildEditorConfig.editorconfig
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.AssemblyInfoInputs.cache
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.AssemblyInfo.vb
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.vbproj.CoreCompileInputs.cache
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.dll
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\refint\NRL Controller.dll
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.pdb
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.genruntimeconfig.cache
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\ref\NRL Controller.dll
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.exe
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.deps.json
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.runtimeconfig.json
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.dll
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.pdb
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\MainWindow.g.vb
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\Application.g.vb
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller_MarkupCompile.cache
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller_MarkupCompile.lref
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\MainWindow.baml
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.g.resources
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.GeneratedMSBuildEditorConfig.editorconfig
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.AssemblyInfoInputs.cache
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.AssemblyInfo.vb
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.vbproj.CoreCompileInputs.cache
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.dll
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\refint\NRL Controller.dll
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.pdb
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.genruntimeconfig.cache
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\ref\NRL Controller.dll
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\System.IO.Ports.dll
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+D:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.vbproj.AssemblyReference.cache
+D:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Cont.92C8591B.Up2Date
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\System.IO.Ports.dll
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+F:\spatiale\NRL Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.vbproj.AssemblyReference.cache
+F:\spatiale\NRL Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Cont.92C8591B.Up2Date
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.exe
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.deps.json
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.runtimeconfig.json
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.dll
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.pdb
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\System.IO.Ports.dll
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+F:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.vbproj.AssemblyReference.cache
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\InfoGraph.baml
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\InfoGraph.g.vb
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\MainWindow.g.vb
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\Application.g.vb
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller_MarkupCompile.cache
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller_MarkupCompile.lref
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\MainWindow.baml
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.g.resources
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.GeneratedMSBuildEditorConfig.editorconfig
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.AssemblyInfoInputs.cache
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.AssemblyInfo.vb
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.vbproj.CoreCompileInputs.cache
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Cont.92C8591B.Up2Date
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.dll
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\refint\NRL Controller.dll
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.pdb
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.genruntimeconfig.cache
+F:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\ref\NRL Controller.dll
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.exe
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.deps.json
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.runtimeconfig.json
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.dll
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\NRL Controller.pdb
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\System.IO.Ports.dll
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+D:\spatiale\NRS Controller\NRL Controller\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.vbproj.AssemblyReference.cache
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\MainWindow.g.vb
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\Application.g.vb
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller_MarkupCompile.cache
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller_MarkupCompile.lref
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\MainWindow.baml
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.g.resources
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.GeneratedMSBuildEditorConfig.editorconfig
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.AssemblyInfoInputs.cache
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.AssemblyInfo.vb
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.vbproj.CoreCompileInputs.cache
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Cont.92C8591B.Up2Date
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.dll
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\refint\NRL Controller.dll
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.pdb
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\NRL Controller.genruntimeconfig.cache
+D:\spatiale\NRS Controller\NRL Controller\obj\Debug\net8.0-windows\ref\NRL Controller.dll

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NRL Controller": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

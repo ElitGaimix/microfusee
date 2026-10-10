@@ -1,0 +1,417 @@
+{
+  "name": "test",
+  "source_ide": "STM32CubeIDE",
+  "path": "a:\\STM32CubeIDE\\test",
+  "languages": [
+      "C"
+  ],
+  "configurations": [
+    {
+      "name": "Debug",
+      "output_filename": "test",
+      "type": "Executable",
+      "toolchain_type": "GCC",
+      "toolchain_prefix": "arm-none-eabi-",
+      "mcu": "STM32F722RETx",
+      "board": "genericBoard",
+      "sources": [
+        { "path": "Core/Src/Modules/crsf.c" },
+        { "path": "Core/Src/Modules/crsf_command.c" },
+        { "path": "Core/Src/main.c" },
+        { "path": "Core/Src/stm32f7xx_hal_msp.c" },
+        { "path": "Core/Src/stm32f7xx_it.c" },
+        { "path": "Core/Src/syscalls.c" },
+        { "path": "Core/Src/sysmem.c" },
+        { "path": "Core/Src/system_stm32f7xx.c" },
+        { "path": "Core/Startup/startup_stm32f722retx.s" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.c" },
+        { "path": "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" },
+        { "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c" },
+        { "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" },
+        { "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" },
+        { "path": "USB_DEVICE/App/usb_device.c" },
+        { "path": "USB_DEVICE/App/usbd_cdc_if.c" },
+        { "path": "USB_DEVICE/App/usbd_desc.c" },
+        { "path": "USB_DEVICE/Target/usbd_conf.c" }
+      ],
+      "tools": [
+            {
+              "type": "c_assembler",
+              "options": {
+                      "option.debuglevel": "-g3",
+                      "option.definedsymbols": "-DDEBUG",
+                      "option.preprocessassembler": "-x assembler-with-cpp"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-g3",
+                  "-DDEBUG",
+                  "-x",
+                  "assembler-with-cpp"
+              ]
+            },
+            {
+              "type": "c_compiler",
+              "options": {
+                      "option.languagestandard": "-std=gnu11",
+                      "option.debuglevel": "-g3",
+                      "option.definedsymbols": "-DDEBUG, -DUSE_HAL_DRIVER, -DSTM32F722xx",
+                      "option.includepaths": "-I../Core/Inc, -I../Drivers/STM32F7xx_HAL_Driver/Inc, -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy, -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include, -I../Drivers/CMSIS/Include, -I../USB_DEVICE/App, -I../USB_DEVICE/Target, -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc, -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+                      "option.optimization.level": "-O0",
+                      "option.ffunction": "-ffunction-sections",
+                      "option.fdata": "-fdata-sections",
+                      "option.warnings.all": "-Wall",
+                      "option.fstackusage": "-fstack-usage",
+                      "option.cyclomaticcomplexity": "-fcyclomatic-complexity"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-std=gnu11",
+                  "-g3",
+                  "-DDEBUG",
+                  "-DUSE_HAL_DRIVER",
+                  "-DSTM32F722xx",
+                  "-I../Core/Inc",
+                  "-I../Drivers/STM32F7xx_HAL_Driver/Inc",
+                  "-I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy",
+                  "-I../Drivers/CMSIS/Device/ST/STM32F7xx/Include",
+                  "-I../Drivers/CMSIS/Include",
+                  "-I../USB_DEVICE/App",
+                  "-I../USB_DEVICE/Target",
+                  "-I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+                  "-I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+                  "-O0",
+                  "-ffunction-sections",
+                  "-fdata-sections",
+                  "-Wall",
+                  "-fstack-usage",
+                  "-fcyclomatic-complexity"
+              ]
+            },
+            {
+              "type": "cpp_compiler",
+              "options": {
+                      "option.languagestandard": "-std=gnu++14",
+                      "option.debuglevel": "-g3",
+                      "option.optimization.level": "-O0",
+                      "option.ffunction": "-ffunction-sections",
+                      "option.fdata": "-fdata-sections",
+                      "option.noexceptions": "-fno-exceptions",
+                      "option.nortti": "-fno-rtti",
+                      "option.nousecxaatexit": "-fno-use-cxa-atexit",
+                      "option.warnings.all": "-Wall",
+                      "option.fstackusage": "-fstack-usage",
+                      "option.cyclomaticcomplexity": "-fcyclomatic-complexity"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-std=gnu++14",
+                  "-g3",
+                  "-O0",
+                  "-ffunction-sections",
+                  "-fdata-sections",
+                  "-fno-exceptions",
+                  "-fno-rtti",
+                  "-fno-use-cxa-atexit",
+                  "-Wall",
+                  "-fstack-usage",
+                  "-fcyclomatic-complexity"
+              ]
+            },
+            {
+              "type": "c_linker",
+              "options": {
+                      "option.script": "-T\"A:/STM32CubeIDE/test/STM32F722RETX_FLASH.ld\"",
+                      "option.systemcalls": "--specs=nosys.specs",
+                      "option.map": "-Wl,-Map=\"test.map\"",
+                      "option.gcsections": "-Wl,--gc-sections",
+                      "option.static": "-static",
+                      "option.generate.secure.lib": "-Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o",
+                      "option.libmath": "-Wl,--start-group -lc -lm -Wl,--end-group"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-T\"A:/STM32CubeIDE/test/STM32F722RETX_FLASH.ld\"",
+                  "--specs=nosys.specs",
+                  "-Wl,-Map=\"test.map\"",
+                  "-Wl,--gc-sections",
+                  "-static"
+              ]
+            },
+            {
+              "type": "cpp_linker",
+              "options": {
+                      "option.script": "-T\"\"",
+                      "option.systemcalls": "--specs=nosys.specs",
+                      "option.map": "-Wl,-Map=\"test.map\"",
+                      "option.gcsections": "-Wl,--gc-sections",
+                      "option.static": "-static",
+                      "option.generate.secure.lib": "-Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o",
+                      "option.libmath": "-Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-T\"\"",
+                  "--specs=nosys.specs",
+                  "-Wl,-Map=\"test.map\"",
+                  "-Wl,--gc-sections",
+                  "-static"
+              ]
+            },
+            {
+              "type": "c_archiver",
+              "options": {
+                      "option.replace": "-r"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-r"
+              ]
+            }
+        ]
+    },
+    {
+      "name": "Release",
+      "output_filename": "test",
+      "type": "Executable",
+      "toolchain_type": "GCC",
+      "toolchain_prefix": "arm-none-eabi-",
+      "mcu": "STM32F722RETx",
+      "board": "genericBoard",
+      "sources": [
+        { "path": "Core/Src/Modules/crsf.c" },
+        { "path": "Core/Src/Modules/crsf_command.c" },
+        { "path": "Core/Src/main.c" },
+        { "path": "Core/Src/stm32f7xx_hal_msp.c" },
+        { "path": "Core/Src/stm32f7xx_it.c" },
+        { "path": "Core/Src/syscalls.c" },
+        { "path": "Core/Src/sysmem.c" },
+        { "path": "Core/Src/system_stm32f7xx.c" },
+        { "path": "Core/Startup/startup_stm32f722retx.s" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c" },
+        { "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.c" },
+        { "path": "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" },
+        { "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c" },
+        { "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" },
+        { "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" },
+        { "path": "USB_DEVICE/App/usb_device.c" },
+        { "path": "USB_DEVICE/App/usbd_cdc_if.c" },
+        { "path": "USB_DEVICE/App/usbd_desc.c" },
+        { "path": "USB_DEVICE/Target/usbd_conf.c" }
+      ],
+      "tools": [
+            {
+              "type": "c_assembler",
+              "options": {
+                      "option.preprocessassembler": "-x assembler-with-cpp"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-x",
+                  "assembler-with-cpp"
+              ]
+            },
+            {
+              "type": "c_compiler",
+              "options": {
+                      "option.languagestandard": "-std=gnu11",
+                      "option.definedsymbols": "-DUSE_HAL_DRIVER, -DSTM32F722xx",
+                      "option.includepaths": "-I../Core/Inc, -I../Drivers/STM32F7xx_HAL_Driver/Inc, -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy, -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include, -I../Drivers/CMSIS/Include, -I../USB_DEVICE/App, -I../USB_DEVICE/Target, -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc, -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+                      "option.optimization.level": "-Os",
+                      "option.ffunction": "-ffunction-sections",
+                      "option.fdata": "-fdata-sections",
+                      "option.warnings.all": "-Wall",
+                      "option.fstackusage": "-fstack-usage",
+                      "option.cyclomaticcomplexity": "-fcyclomatic-complexity"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-std=gnu11",
+                  "-DUSE_HAL_DRIVER",
+                  "-DSTM32F722xx",
+                  "-I../Core/Inc",
+                  "-I../Drivers/STM32F7xx_HAL_Driver/Inc",
+                  "-I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy",
+                  "-I../Drivers/CMSIS/Device/ST/STM32F7xx/Include",
+                  "-I../Drivers/CMSIS/Include",
+                  "-I../USB_DEVICE/App",
+                  "-I../USB_DEVICE/Target",
+                  "-I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+                  "-I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+                  "-Os",
+                  "-ffunction-sections",
+                  "-fdata-sections",
+                  "-Wall",
+                  "-fstack-usage",
+                  "-fcyclomatic-complexity"
+              ]
+            },
+            {
+              "type": "cpp_compiler",
+              "options": {
+                      "option.languagestandard": "-std=gnu++14",
+                      "option.optimization.level": "-Os",
+                      "option.ffunction": "-ffunction-sections",
+                      "option.fdata": "-fdata-sections",
+                      "option.noexceptions": "-fno-exceptions",
+                      "option.nortti": "-fno-rtti",
+                      "option.nousecxaatexit": "-fno-use-cxa-atexit",
+                      "option.warnings.all": "-Wall",
+                      "option.fstackusage": "-fstack-usage",
+                      "option.cyclomaticcomplexity": "-fcyclomatic-complexity"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-std=gnu++14",
+                  "-Os",
+                  "-ffunction-sections",
+                  "-fdata-sections",
+                  "-fno-exceptions",
+                  "-fno-rtti",
+                  "-fno-use-cxa-atexit",
+                  "-Wall",
+                  "-fstack-usage",
+                  "-fcyclomatic-complexity"
+              ]
+            },
+            {
+              "type": "c_linker",
+              "options": {
+                      "option.script": "-T\"A:/STM32CubeIDE/test/STM32F722RETX_FLASH.ld\"",
+                      "option.systemcalls": "--specs=nosys.specs",
+                      "option.map": "-Wl,-Map=\"test.map\"",
+                      "option.gcsections": "-Wl,--gc-sections",
+                      "option.static": "-static",
+                      "option.generate.secure.lib": "-Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o",
+                      "option.libmath": "-Wl,--start-group -lc -lm -Wl,--end-group"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-T\"A:/STM32CubeIDE/test/STM32F722RETX_FLASH.ld\"",
+                  "--specs=nosys.specs",
+                  "-Wl,-Map=\"test.map\"",
+                  "-Wl,--gc-sections",
+                  "-static"
+              ]
+            },
+            {
+              "type": "cpp_linker",
+              "options": {
+                      "option.script": "-T\"\"",
+                      "option.systemcalls": "--specs=nosys.specs",
+                      "option.map": "-Wl,-Map=\"test.map\"",
+                      "option.gcsections": "-Wl,--gc-sections",
+                      "option.static": "-static",
+                      "option.generate.secure.lib": "-Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o",
+                      "option.libmath": "-Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-T\"\"",
+                  "--specs=nosys.specs",
+                  "-Wl,-Map=\"test.map\"",
+                  "-Wl,--gc-sections",
+                  "-static"
+              ]
+            },
+            {
+              "type": "c_archiver",
+              "options": {
+                      "option.replace": "-r"
+              },
+              "flags": [
+                  "-mfpu=fpv5-sp-d16",
+                  "-mfloat-abi=hard",
+                  "-mthumb",
+                  "--specs=nano.specs",
+                  "-mcpu=cortex-m7",
+                  "-r"
+              ]
+            }
+        ]
+    }
+  ]
+}
