@@ -1,4 +1,20 @@
 package fr.elitgaimix.nlfc;
 
-public class NLRApplication {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class NLRApplication extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(
+                NLRApplication.class.getResource("/fr/elitgaimix/nlfc/main_window.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("NLFlightController");
+        stage.setScene(scene);
+        stage.show();
+    }
 }

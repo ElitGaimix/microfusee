@@ -1,0 +1,11 @@
+module fr.elitgaimix.nlfc {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+    requires org.controlsfx.controls;
+    requires org.kordamp.ikonli.javafx;
+    requires com.fazecast.jSerialComm;
+
+    opens fr.elitgaimix.nlfc to javafx.fxml;
+    exports fr.elitgaimix.nlfc;
+}
