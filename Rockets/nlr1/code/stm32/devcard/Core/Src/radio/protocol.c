@@ -17,7 +17,7 @@
 #define AIRPORT_PACKET_ACK       0x03U
 
 #define AIRPORT_MAX_PAYLOAD      255U
-#define AIRPORT_MAX_PACKET       (4U + AIRPORT_MAX_PAYLOAD)
+#define AIRPORT_MAX_PACKET       (5U + AIRPORT_MAX_PAYLOAD)
 
 /* Réception UART par DMA */
 static uint8_t airport_dma_rx[AIRPORT_RX_SIZE];
@@ -42,6 +42,33 @@ static void AirPort_StartReception(void);
 static uint16_t AirPort_GetPacket(uint8_t *destination);
 static void AirPort_ProcessPacket(uint8_t *packet, uint16_t size);
 static void AirPort_ParseByte(uint8_t byte);
+
+/* CRC-16/CCITT-FALSE: init FFFF, poly 1021, no reflection or final XOR.
+ * Covers syncword, length, ID and payload; sent most significant byte first.
+ */
+static uint16_t AirPort_Crc16(const uint8_t *data, uint16_t length)
+{
+    uint16_t crc = 0xFFFFU;
+
+    for (uint16_t i = 0U; i < length; i++)
+    {
+        crc ^= (uint16_t)((uint16_t)data[i] << 8);
+
+        for (uint8_t bit = 0U; bit < 8U; bit++)
+        {
+            if ((crc & 0x8000U) != 0U)
+            {
+                crc = (uint16_t)(((uint32_t)crc << 1) ^ 0x1021U);
+            }
+            else
+            {
+                crc = (uint16_t)((uint32_t)crc << 1);
+            }
+        }
+    }
+
+    return crc;
+}
 
 /* Démarre la réception DMA avec détection de silence (IDLE). */
 static void AirPort_StartReception(void)
@@ -131,6 +158,10 @@ static uint16_t AirPort_GetPacket(uint8_t *destination)
     return size;
 }
 
+void Send_HeartBeat(){
+
+}
+
 /* Affiche le paquet et répond par un ACK aux requêtes de type 0x00. */
 static void AirPort_ProcessPacket(uint8_t *packet, uint16_t size)
 {
@@ -138,9 +169,10 @@ static void AirPort_ProcessPacket(uint8_t *packet, uint16_t size)
     uint8_t payload_len;
     uint8_t packet_id;
     uint8_t *payload;
-    uint8_t checksum;
+    uint16_t received_crc;
+    uint16_t expected_crc;
 
-    if (size < 4U)
+    if (size < 5U)
     {
         return;
     }
@@ -148,8 +180,8 @@ static void AirPort_ProcessPacket(uint8_t *packet, uint16_t size)
     syncword = packet[0];
     payload_len = packet[1];
 
-    /* Vérifie la taille avant d'accéder au checksum ou au payload. */
-    if (size != (uint16_t)(4U + payload_len))
+    /* Vérifie la taille avant d'accéder au CRC ou au payload. */
+    if (size != (uint16_t)(5U + payload_len))
     {
         printf("Paquet invalide : taille=%u, longueur annoncee=%u\r\n",
                (unsigned int)size,
@@ -159,7 +191,18 @@ static void AirPort_ProcessPacket(uint8_t *packet, uint16_t size)
 
     packet_id = packet[2];
     payload = &packet[3];
-    checksum = packet[3U + payload_len];
+    received_crc = (uint16_t)(
+        ((uint16_t)packet[3U + payload_len] << 8) |
+        (uint16_t)packet[4U + payload_len]);
+    expected_crc = AirPort_Crc16(packet, (uint16_t)(size - 2U));
+
+    if (received_crc != expected_crc)
+    {
+        printf("CRC invalide : recu=0x%04X, attendu=0x%04X\r\n",
+               (unsigned int)received_crc,
+               (unsigned int)expected_crc);
+        return;
+    }
 
     printf("\r\nPaquet recu (%u octets)\r\n", (unsigned int)size);
     printf("  Syncword    : 0x%02X\r\n", syncword);
@@ -180,7 +223,7 @@ static void AirPort_ProcessPacket(uint8_t *packet, uint16_t size)
     }
 
     printf("\r\n");
-    printf("  Checksum    : 0x%02X\r\n", checksum);
+    printf("  CRC-16      : 0x%04X\r\n", (unsigned int)received_crc);
 
     if (syncword != AIRPORT_SYNCWORD)
     {
@@ -190,17 +233,21 @@ static void AirPort_ProcessPacket(uint8_t *packet, uint16_t size)
 
     if (packet_id == AIRPORT_PACKET_REQUEST)
     {
-        const uint8_t ack[4] = {
+        uint8_t ack[5] = {
             AIRPORT_SYNCWORD,
             0x00U,
-            AIRPORT_PACKET_ACK,
+            0x00U,
+            0x00U,
             0x00U
         };
+        uint16_t crc = AirPort_Crc16(ack, 3U);
+        ack[3] = (uint8_t)(crc >> 8);
+        ack[4] = (uint8_t)(crc & 0xFFU);
 
-        printf("  Envoi ACK...\r\n");
+        printf("  Envoi en retour... ");
 
         if (HAL_UART_Transmit(&huart6,
-                              (uint8_t *)ack,
+                              ack,
                               sizeof(ack),
                               1000U) != HAL_OK)
         {
@@ -209,7 +256,7 @@ static void AirPort_ProcessPacket(uint8_t *packet, uint16_t size)
         }
         else
         {
-            printf("  ACK envoye : AA 00 03 00\r\n");
+            printf("  HeartBeat envoyé !\r\n");
         }
     }
     else
@@ -246,7 +293,7 @@ static void AirPort_ParseByte(uint8_t byte)
     /* Après syncword + longueur, on connaît la taille totale attendue. */
     if (airport_rx_count == 2U)
     {
-        airport_rx_expected = (uint16_t)(4U + airport_rx_packet[1]);
+        airport_rx_expected = (uint16_t)(5U + airport_rx_packet[1]);
     }
 
     if (airport_rx_expected != 0U &&

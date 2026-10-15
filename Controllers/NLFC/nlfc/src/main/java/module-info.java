@@ -8,4 +8,6 @@ module fr.elitgaimix.nlfc {
 
     opens fr.elitgaimix.nlfc to javafx.fxml;
     exports fr.elitgaimix.nlfc;
+    exports fr.elitgaimix.nlfc.systems;
+    opens fr.elitgaimix.nlfc.systems to javafx.fxml;
 }

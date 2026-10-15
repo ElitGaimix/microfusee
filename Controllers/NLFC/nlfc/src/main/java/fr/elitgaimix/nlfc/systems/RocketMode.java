@@ -1,4 +1,4 @@
-package fr.elitgaimix.nlfc.rockets;
+package fr.elitgaimix.nlfc.systems;
 
 public enum RocketMode {
     DISARMED,
