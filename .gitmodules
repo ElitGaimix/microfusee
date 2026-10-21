@@ -1,0 +1,9 @@
+[submodule "NLFC"]
+	path = NLFC
+	url = https://github.com/ElitGaimix/NLFC.git
+[submodule "Rockets/NLR"]
+	path = Rockets/NLR
+	url = https://github.com/ElitGaimix/NLR.git
+[submodule "RocketLRS"]
+	path = RocketLRS
+	url = https://github.com/ElitGaimix/RocketLRS.git
