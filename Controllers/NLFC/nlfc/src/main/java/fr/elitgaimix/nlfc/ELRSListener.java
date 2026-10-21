@@ -6,6 +6,7 @@ import com.fazecast.jSerialComm.SerialPortEvent;
 import fr.elitgaimix.nlfc.packets.Packet;
 import fr.elitgaimix.nlfc.packets.PacketParser;
 import fr.elitgaimix.nlfc.packets.PacketType;
+import fr.elitgaimix.nlfc.systems.RocketMode;
 import fr.elitgaimix.nlfc.systems.Transmitter;
 import javafx.application.Platform;
 
@@ -43,6 +44,11 @@ public class ELRSListener implements SerialPortDataListener {
                         NLRController.INSTANCE.appendConsole(PacketParser.formatPacket(packet));
                         if (packet.type == PacketType.HEARTBEAT){
                             transmitter.runnable.onHeartbeatReceived();
+                            if(packet.payload.length > 0)
+                                NLRController.INSTANCE.rocket.mode = RocketMode.fromId(packet.payload[0]);
+                            else
+                                NLRController.INSTANCE.rocket.mode = RocketMode.ERROR;
+
                         }
                     }
                 }

@@ -2,11 +2,10 @@ package fr.elitgaimix.nlfc.systems;
 
 import com.fazecast.jSerialComm.SerialPort;
 import fr.elitgaimix.nlfc.ELRSListener;
-import fr.elitgaimix.nlfc.ELRSRunnable;
+import fr.elitgaimix.nlfc.runnables.ELRSRunnable;
 import fr.elitgaimix.nlfc.NLRController;
 import fr.elitgaimix.nlfc.packets.Packet;
 import fr.elitgaimix.nlfc.packets.PacketParser;
-import javafx.scene.paint.Color;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -28,6 +27,11 @@ public class Transmitter {
     public Transmitter(){
         this.packetParser = new PacketParser();
         this.listener = new ELRSListener(this);
+    }
+
+    public void stop(){
+        if (connected)
+            disconnect();
     }
 
     public int transmit(Packet packet){
@@ -71,44 +75,33 @@ public class Transmitter {
         boolean closed = disconnectedPort.closePort();
         packetParser.reset();
         NLRController controller = NLRController.INSTANCE;
-        controller.connect.setText("Connect");
-        controller.comState.setText("Disconnected");
-        controller.comState.setTextFill(Color.RED);
         if (controller.rocket != null && controller.rocket.transmitter == this)
             controller.rocket = null;
         controller.appendConsole((closed ? "Serial port disconnected."
                 : "Error closing serial port.") + System.lineSeparator());
     }
 
-    public void connect(){
+    public void connect(String selectedPort){
         NLRController controller = NLRController.INSTANCE;
-        String selectedPort = controller.com.getValue();
         if (selectedPort == null) {
-            controller.console.setText("Error: select a serial port first.");
-            controller.comState.setText("Disconnected");
-            controller.comState.setTextFill(Color.RED);
+            controller.logError("Error: select a serial port first.");
             return;
         }
 
         SerialPort port = SerialPort.getCommPort(selectedPort);
         port.setBaudRate(9600);
         if (!port.openPort()) {
-            controller.console.setText("Error: could not open " + selectedPort
+            controller.logError("Error: could not open " + selectedPort
                     + " (jSerialComm error " + port.getLastErrorCode()
                     + ", location " + port.getLastErrorLocation() + ").");
-            controller.comState.setText("Disconnected");
-            controller.comState.setTextFill(Color.RED);
             return;
         }
-        controller.connect.setText("Disconnect");
-        controller.comState.setText("Connected");
-        controller.comState.setTextFill(Color.GREEN);
         packetParser.reset();
         this.port = port;
         this.connected = true;
-        port.addDataListener(new ELRSListener(this));
         heartbeatExecutor = Executors.newSingleThreadScheduledExecutor();
         runnable = new ELRSRunnable();
+        port.addDataListener(new ELRSListener(this));
         scheduled = heartbeatExecutor.scheduleAtFixedRate(runnable, 0, 1, TimeUnit.SECONDS);
     }
 }

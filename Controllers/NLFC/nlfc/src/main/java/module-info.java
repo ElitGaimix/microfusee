@@ -10,4 +10,6 @@ module fr.elitgaimix.nlfc {
     exports fr.elitgaimix.nlfc;
     exports fr.elitgaimix.nlfc.systems;
     opens fr.elitgaimix.nlfc.systems to javafx.fxml;
+    exports fr.elitgaimix.nlfc.runnables;
+    opens fr.elitgaimix.nlfc.runnables to javafx.fxml;
 }

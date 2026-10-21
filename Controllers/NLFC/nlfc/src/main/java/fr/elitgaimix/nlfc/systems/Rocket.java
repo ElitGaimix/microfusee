@@ -19,5 +19,9 @@ public class Rocket {
         transmitter.transmit(new Packet(PacketType.HEARTBEAT, new byte[]{0x02}));
     }
 
+    public void stop(){
+        transmitter.stop();
+    }
+
 
 }
